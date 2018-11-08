@@ -1,0 +1,44 @@
+body
+{
+    width:100%;
+}
+#cinema
+{
+    margin:5px;
+    background-color: aqua;
+    width:400px;
+    height:270px;
+    display: inline-block;
+    
+}
+section{
+    width:100%;
+}
+#test
+{
+    width:400px;
+    height:270px;
+}
+.divtext
+{
+    width:49%;
+    display: inline-block;
+    margin-top:20%;
+}
+#divFilms
+{
+    width:49%;
+    display: inline-block;
+    margin-top:20%;  
+}
+
+img
+{
+    float:right;
+    width:50%;
+    height:100%;
+    
+}
+
+
+
