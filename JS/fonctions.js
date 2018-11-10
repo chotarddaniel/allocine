@@ -1,11 +1,11 @@
-function AfficherLesFilms()
+function AfficherLesFilms(codeFilm)
 {
     $.ajax
     (
             {
               type:"get",
               url:"AfficherLesFilms.php",
-              data:"idCinema="+$('#Test').text(),
+              data:"idCinema="+codeFilm,
               success: function(data)
               {
                   $('#divFilms').empty();

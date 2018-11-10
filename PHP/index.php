@@ -14,26 +14,30 @@ and open the template in the editor.
         <script type="text/javascript" src="../JS/fonctions.js"></script>
     </head>
     <body>
+    <section class=general>
         <?php
             include 'cnx.php';
 
             $sql = $bdd->prepare("select * from cinema ");
             $sql->execute();
             foreach($sql->fetchAll(PDO::FETCH_ASSOC) as $ligne)
-            {
-                echo "<div id=cinema >";
+            {   
+                echo "<div id=cinema class=cine onclick=AfficherLesFilms('".$ligne['codeCine']."')>";
                     echo"<section class=divtext>";
-                        echo"<div id=Test onclick='AfficherLesFilms()'>";
                             echo "<p>".$ligne['codeCine']."</p>".'</br>';
-                        echo"</div>";
                         echo $ligne['nomCine'];
                     echo"</section>";
                     echo "<img src=".$ligne['imageCine'].">";
                     
                 echo "</div>";
+                
             }
             
         ?>
+        
+         <br>
         <div id='divFilms'></div>
+        <div id='dicActeurs'></div>
+        </section>
     </body>
 </html>
