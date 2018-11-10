@@ -26,6 +26,15 @@ body
     display: inline-block;
     
 }
+.cine3
+{
+    margin:5px;
+    background-color: greenyellow;
+    width:400px;
+    height:270px;
+    display: inline-block;
+    
+}
 section{
     width:100%;
 }

@@ -7,7 +7,7 @@ $sql->execute();
 $lesFilms = $sql->fetchAll(PDO::FETCH_ASSOC);
 foreach($lesFilms as $ligne)
 { 
-    echo"<div id=idfilm class=cine2>";
+    echo"<div id=idFilm class=cine2 onclick=AfficherLesActeurs('".$ligne['codeFilm']."')>";
         echo"<section class=divtext>";
             echo"<p>".$ligne['codeFilm']."</p>".'</br>';
             echo $ligne['nomFilm'];

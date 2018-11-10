@@ -22,7 +22,7 @@ and open the template in the editor.
             $sql->execute();
             foreach($sql->fetchAll(PDO::FETCH_ASSOC) as $ligne)
             {   
-                echo "<div id=cinema class=cine onclick=AfficherLesFilms('".$ligne['codeCine']."')>";
+                echo "<div id=idCinema class=cine onclick=AfficherLesFilms('".$ligne['codeCine']."')>";
                     echo"<section class=divtext>";
                             echo "<p>".$ligne['codeCine']."</p>".'</br>';
                         echo $ligne['nomCine'];
@@ -37,7 +37,7 @@ and open the template in the editor.
         
          <br>
         <div id='divFilms'></div>
-        <div id='dicActeurs'></div>
+        <div id='divActeurs'></div>
         </section>
     </body>
 </html>
